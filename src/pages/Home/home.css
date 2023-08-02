@@ -1,0 +1,80 @@
+.homeContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeContent {
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.leftContainer {
+  width: 50%;
+  /* background-color: red; */
+}
+
+.logo {
+  width: 84px;
+  height: 84px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.leftContainer h1 {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.leftContainer p {
+  font-weight: bold;
+}
+
+.leftContainer h2 {
+  font-size: 3.5rem;
+  margin-top: 1rem;
+  /* Usar o verde do Tchova */
+  color: green;
+}
+
+.rightContainer {
+  width: 35%;
+  height: 450px;
+  padding: 3rem 2rem;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.rightContainer form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.rightContainer form input {
+  margin-bottom: 25px;
+  padding: 20px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.rightContainer form button {
+  background-color: green;
+  color: #fff;
+  padding: 20px 20px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rightContainer form button:hover {
+  background-color: green;
+}
