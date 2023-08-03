@@ -58,7 +58,9 @@ export function HomeScreen() {
                 onChange={(e) => setPhoneNumber(e.target.value)}
                 placeholder="Digite o seu número de telefone"
               />
-              <button onClick={handleSubmit}>Enviar</button>
+              <button onClick={handleSubmit} type="button">
+                Enviar
+              </button>
             </form>
           </aside>
         </div>
