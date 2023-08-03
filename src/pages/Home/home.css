@@ -49,6 +49,41 @@
   }
 }
 
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
+  .homeContainer {
+    width: 100vw;
+    height: 100% !important;
+  }
+
+  .homeContent {
+    width: 90vw;
+    height: 100% !important;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .rightContainer {
+    width: 95% !important;
+    margin-top: 2rem;
+  }
+
+  .leftContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .leftContainer h1 {
+    text-align: center;
+    font-size: 2rem !important;
+  }
+}
+
 .leftContainer {
   width: 50%;
 }
