@@ -3,21 +3,13 @@ import "./home.css";
 import { useState } from "react";
 
 export function HomeScreen() {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
 
-  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setEmail(event.target.value);
-  };
-
-  const handlePhoneNumberChange = (
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    setPhoneNumber(event.target.value);
-  };
-
   const handleSubmit = () => {
     // Aqui você pode realizar a lógica do envio do formulário ou outras ações necessárias
+    console.log("Name:", name);
     console.log("Email:", email);
     console.log("Phone Number:", phoneNumber);
   };
@@ -50,15 +42,21 @@ export function HomeScreen() {
             <form>
               <input
                 type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Digite o seu nome"
+              />
+              <input
+                type="text"
                 value={email}
-                onChange={handleEmailChange}
-                placeholder="Email"
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Digite o seu email"
               />
               <input
                 type="text"
                 value={phoneNumber}
-                onChange={handlePhoneNumberChange}
-                placeholder="Phone Number"
+                onChange={(e) => setPhoneNumber(e.target.value)}
+                placeholder="Digite o seu número de telefone"
               />
               <button onClick={handleSubmit}>Enviar</button>
             </form>
